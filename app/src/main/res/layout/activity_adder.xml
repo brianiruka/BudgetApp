@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/cashTitle"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="20dp"
+        android:text="Update Cash:"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cashTitle"
+        android:layout_marginTop="70dp"
+        >
+
+        <RadioButton
+            android:id="@+id/radio_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Add to"
+            tools:text="Add to"
+            android:buttonTint="@color/moneycolor"/>
+
+        <RadioButton
+            android:id="@+id/radio_remove"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/moneycolor"
+            android:text="Subtract from"
+            tools:text="Subtract from" />
+
+        <RadioButton
+            android:id="@+id/radio_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="New Amount"
+            android:buttonTint="@color/moneycolor"
+            tools:text="New Amount" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/amount_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginStart="33dp"
+        android:ems="10"
+        android:hint="Amout"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/amount_text"
+        android:layout_toEndOf="@+id/buttonAddManual"
+        android:background="@drawable/selector"
+        android:textColor="@color/black"
+        android:text="Update"
+        tools:text="Update" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnUpdate"
+        android:layout_marginTop="30dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/prodTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:text="Add Item"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/buttonAddManual"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="170dp"
+        android:layout_height="59dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/prodTitle"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/selector"
+        android:textColor="@color/black"
+        android:text="Add Item Manually" />
+
+    <Button
+        android:id="@+id/btnAmazon"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="158dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/buttonAddManual"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selector"
+        android:textColor="@color/black"
+        android:text="Search Amazon" />
+
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+{
+    "projectName": "BudgetAppTest",
+    "projectPath": "C:\\Users\\briru\\Downloads\\aws-mobile-android-notes-tutorial-master\\BudgetAppTest",
+    "defaultEditor": "none",
+    "frontendHandler": {
+        "android": "C:\\Users\\briru\\AppData\\Roaming\\npm\\node_modules\\@aws-amplify\\cli\\node_modules\\amplify-frontend-android"
+    },
+    "amplify-frontend-android": {
+        "config": {
+            "ResDir": "app/src/main/res"
+        }
+    },
+    "providers": {
+        "awscloudformation": "C:\\Users\\briru\\AppData\\Roaming\\npm\\node_modules\\@aws-amplify\\cli\\node_modules\\amplify-provider-awscloudformation"
+    }
+}
